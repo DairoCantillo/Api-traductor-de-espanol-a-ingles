@@ -3,7 +3,7 @@
 | Ruta             | Parámetro                   | Funcionalidad                                |
 | ---------------- | --------------------------- | -------------------------------------------- |
 | `/espanolIngles` | {texto:'TEXTO A TRADUCIR' } | traduce el texto del req de español a ingles |
-| `/inglesEspanol` | {texto:'TEXTO A TRADUCIR' } | traduce el tecto del req de ingles a español |
+| `/inglesEspanol` | {texto:'TEXTO A TRADUCIR' } | traduce el texto del req de ingles a español |
 
 ## Esta disponible en:
 
