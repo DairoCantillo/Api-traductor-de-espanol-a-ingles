@@ -2,16 +2,32 @@ var express = require("express");
 var app = express();
 const translate = require("@vitalets/google-translate-api");
 
-app.get("/espanolIngles", function (req, res) {
-  translate("I spea Dutch!", { from: "en", to: "nl" })
+app.get("/", (req, res) => {
+  res.send("OK");
+});
+
+app.post("/espanolIngles", (req, res) => {
+  let data = { texto: "" };
+  translate(req.query.texto, { from: "es", to: "en" })
     .then((respuesta) => {
-      res.send("ok");
+      data.texto = respuesta.text;
+      res.send(data);
     })
     .catch((err) => {
-      console.error(err);
+      res.send(err);
     });
 });
 
-app.listen(3000, function () {
-  console.log("Aplicación ejemplo, escuchando el puerto 3000!");
+app.post("/inglesEspanol", (req, res) => {
+  let data = { texto: "" };
+  translate(req.query.texto, { from: "en", to: "es" })
+    .then((respuesta) => {
+      data.texto = respuesta.text;
+      res.send(data);
+    })
+    .catch((err) => {
+      res.send(err);
+    });
 });
+
+app.listen(3001);
