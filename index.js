@@ -3,7 +3,10 @@ var app = express();
 const translate = require("@vitalets/google-translate-api");
 
 app.get("/", (req, res) => {
-  res.send("OK");
+  res.send({
+    repo: "https://github.com/DairoCantillo/Api-traductor-de-espa-ol-a-ingles",
+    version: "1.0",
+  });
 });
 
 app.post("/espanolIngles", (req, res) => {
