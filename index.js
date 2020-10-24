@@ -4,7 +4,7 @@ const translate = require("@vitalets/google-translate-api");
 
 app.get("/", (req, res) => {
   res.send({
-    repo: "https://github.com/DairoCantillo/Api-traductor-de-espa-ol-a-ingles",
+    repo: "https://github.com/DairoCantillo/Api-traductor-de-espanol-a-ingles",
     version: "1.0",
   });
 });
