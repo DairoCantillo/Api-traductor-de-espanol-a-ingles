@@ -32,7 +32,7 @@ por defecto se ejecutara en el puerto 3000
 
 ## Versionado :bookmark_tabs:
 
-Ultima versión [1.0]
+Ultima versión [1.0](https://github.com/DairoCantillo/Api-traductor-de-espanol-a-ingles/releases)
 
 ## Autores :black_nib:
 
