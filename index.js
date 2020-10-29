@@ -3,6 +3,8 @@ var app = express();
 const translate = require("@vitalets/google-translate-api");
 let port = process.env.PORT || 3000;
 
+app.use(cors())
+
 app.get("/", (req, res) => {
   res.send({
     repo: "https://github.com/DairoCantillo/Api-traductor-de-espanol-a-ingles",
