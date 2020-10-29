@@ -1,5 +1,6 @@
-var express = require("express");
-var app = express();
+let express = require("express");
+var cors = require('cors')
+let app = express();
 const translate = require("@vitalets/google-translate-api");
 let port = process.env.PORT || 3000;
 
